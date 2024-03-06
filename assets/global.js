@@ -762,13 +762,13 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
 
-    // console.log('current variant:', this.currentVariant);
+    console.log('current variant:', this.currentVariant);
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
     } else {
-      //this.updateMedia();
+      this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
